@@ -8,9 +8,9 @@
       "name": "bundler"
     }
   ],
-  "recipes": [
-	"passenger_apache2",
-	"php",
-	"mysql"
+  "run_list": [
+	recipe["passenger_apache2"],
+	recipe["php"],
+	recipe["mysql"]
 	]
 }
