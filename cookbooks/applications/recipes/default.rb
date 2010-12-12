@@ -17,27 +17,31 @@
 # limitations under the License.
 #
 
-directory "/data" do
-  owner node[:user]
-  mode 0755
-end
+# For each application, set up the permissions on directories
+# and make sure the owner is correct.
 
-node[:apps].each do |app|
-  
-  cap_directories = [
-    "/data/#{app}/shared",
-    "/data/#{app}/shared/config",
-    "/data/#{app}/shared/system",
-    "/data/#{app}/releases"
-  ]
-  
-  cap_directories.each do |dir|
-    directory dir do
-      owner node[:user]
-      mode 0755
-      recursive true
-    end
-  end
-  
-end
+
+# directory "/data" do
+#   owner node[:user]
+#   mode 0755
+# end
+# 
+# node[:apps].each do |app|
+#   
+#   cap_directories = [
+#     "/data/#{app}/shared",
+#     "/data/#{app}/shared/config",
+#     "/data/#{app}/shared/system",
+#     "/data/#{app}/releases"
+#   ]
+#   
+#   cap_directories.each do |dir|
+#     directory dir do
+#       owner node[:user]
+#       mode 0755
+#       recursive true
+#     end
+#   end
+#   
+# end
 

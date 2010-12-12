@@ -3,22 +3,22 @@
 ###
 
 # The company name - used for SSL certificates, and in various other places
-COMPANY_NAME = "Engine Yard, Inc."
+COMPANY_NAME = "Purple Tonic Ltd"
 
 # The Country Name to use for SSL Certificates
-SSL_COUNTRY_NAME = "US"
+SSL_COUNTRY_NAME = "UK"
 
 # The State Name to use for SSL Certificates
-SSL_STATE_NAME = "California"
+SSL_STATE_NAME = "London"
 
 # The Locality Name for SSL - typically, the city
-SSL_LOCALITY_NAME = "San Francisco"
+SSL_LOCALITY_NAME = "London"
 
 # What department?
 SSL_ORGANIZATIONAL_UNIT_NAME = "Operations"
 
 # The SSL contact email address
-SSL_EMAIL_ADDRESS = "ops@engineyard.com"
+SSL_EMAIL_ADDRESS = "ops@purpletonic.com"
 
 # License for new Cookbooks
 # Can be :apachev2 or :none
