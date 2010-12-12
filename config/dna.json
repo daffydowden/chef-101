@@ -8,5 +8,9 @@
       "name": "bundler"
     }
   ],
-  "recipes": [""]
+  "recipes": [
+	"passenger_apache2",
+	"php",
+	"mysql"
+	]
 }
